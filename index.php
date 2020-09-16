@@ -275,7 +275,7 @@ iframe {
 	<div class="row d-flex justify-content-center">
 		<h2 class="text-center">Contact Us</h2>
 	</div></br>
-	<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6qqOhrMj4ARcrvldAHoQKY&key=AIzaSyAxxr79gz8hoB817RgYOeADd9g1pvwrLF4" allowfullscreen>
+	<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:#" allowfullscreen>
 </iframe>
 </div>
 <footer>
