@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+<title>Products Page</title>   
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #B8B8B8;
+	}
+	h1 {
+		text-align: center;
+		margin: 10px;
+	}
+	.container {
+		margin: 0 auto;
+		padding: 0;
+		background-color: white;
+		max-width: 1140px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 80%;
+		grid-template-areas:
+			"header header" 
+			"column-left column-right"
+	}
+	.column-left {
+		display: flex;
+		flex-direction: column;
+	}
+	.column-left input, .column-left i {
+		margin: 0 auto;
+		width: 200px;
+	}
+	.column-left img {
+		margin: 40px auto 30px auto;
+		height: 150px;
+		width: 200px;
+	} 
+	.row {
+		display: flex;
+		justify-content: space-around;
+	}
+	.feedbacks {
+		display: flex;
+		flex-direction: column;
+		border: 2px solid;
+		margin: 0 auto;
+		width: 600px;
+		height: 150px;
+		overflow:scroll;
+    	overflow-x:hidden;
+	}
+	.feedbacks span {
+		margin: 6px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+	.feedbacks i {
+		margin: 5px 0;
+	}
+	input[name="hide-show-feedback"] {
+		display: flex;
+		margin: 10px 0;
+	}
+	.star-container p {
+		margin: 0 0 0 8px;
+		padding: 0;
+
+	}
+	.star-container {
+		display: inline-flex;
+		position: relative;
+		margin: 18.72px 0;
+		height: 18px;
+	}
+	.star-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		white-space: nowrap;
+		overflow: hidden;
+		width: 0;
+
+	}
+	.star-outer::before {
+		position: relative;
+		display: inline-block;
+		content: "\f005 \f005 \f005 \f005 \f005";
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		color: #ccc;
+
+	}
+	.star-inner::before {
+		position: relative;
+		display: inline-block;
+		content: "\f005 \f005 \f005 \f005 \f005";
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		color: #FFD700;
+
+	}
+</style>
+
+</head>
+<body>
+<div class=body>
+	<h1>Product</h1>
+	<div class="container">
+		<div class="column-left">
+			<img src="images/mop.jpg">
+			<i>Click Image to Enlarge/Shrink</i>
+			<input type="button" name="write-feedback" value="Write Feedback!">
+		</div>
+
+		<div class="column-right">
+			<div class="row">
+				<h3>Mop</h3>
+				<div class="star-container" data-name="mop">
+					<div class="star-outer"></div>
+					<!--
+					<div class="star-inner"></div>
+					<p>4.7</p>
+					-->
+				</div>
+			</div>
+			<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+			<div class="row">
+				<h2>$5.99</h2>
+				<input type="button" name="Cart" value="Add to Cart">
+			</div>
+			<input class="feedback-btn" data-feedbackID="1" type="button" name="hide-show-feedback" value="Show Feedback">
+			<div class="feedbacks" data-feedbackID="1">				
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="column-left">
+			<img src="images/backpack.jpg">
+			<i>Click Image to Enlarge/Shrink</i>
+			<input type="button" name="write-feedback" value="Write Feedback!">
+		</div>
+
+		<div class="column-right">
+			<div class="row">
+				<h3>Backpack</h3>
+				<div class="star-container" data-name="mop">
+					<div class="star-outer"></div>
+					<!--
+					<div class="star-inner"></div>
+					<p>4.7</p>
+					-->
+				</div>
+			</div>
+			<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+			The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+			<div class="row">
+				<h2>$39.99</h2>
+				<input type="button" name="Cart" value="Add to Cart">
+			</div>
+			<input class="feedback-btn" data-feedbackID="1" type="button" name="hide-show-feedback" value="Show Feedback">
+			<div class="feedbacks" data-feedbackID="1">				
+			</div>
+		</div>
+	</div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			//False = original size, True = bigger than original size
+			var imageSize = false;
+			// False = not been clicked yet
+			var clickOrNot = "false";
+			var listOfProductNames = [];
+			/*result =
+				element.hasAttributeNS(
+				namespace,
+				localName) */
+			$.ajax({
+                url: "getStarRating.php",
+                method: "POST",
+                dataType: "json",  
+                success: function(data){
+                	data.forEach(function(e){
+                		listOfProductNames.push(e.Prod_Name);
+                	});
+                	console.log($('.star-container').parent().find("[data-name='mop']")); 
+                	//$('.star-container').append('<div class="star-inner"></div>');
+                	//$('.star-inner').width(ratingToPixel(4.7));      	
+                },
+                error:function(data){console.log('Exception: '+data);}        
+            })
+            
+			function ratingToPixel(rating){
+				//Every 0.056 star/ 1px
+				//Each 1 full star = 18 px
+				var rate = 5 / 90;
+				var starValue;
+
+				starValue = rating / rate;
+				return starValue;
+			}
+				
+			$('.column-left img').click(function (){
+				if(imageSize == false){
+					$(this).animate({
+						'height' : 375,
+						'width' : 350
+					}, 1000);
+					imageSize = true;
+				} else {
+					$(this).animate({
+						'height' : 150,
+						'width' : 200
+					}, 1000);
+					imageSize = false;
+				}
+			});
+			$('.feedback-btn').click(function(){
+				if(clickOrNot == "false"){
+					$(this).attr('value', "Hide Feedback");	
+					$.ajax({
+                        url: "server.php",
+                        method: "POST",
+                        data: 'feedbackID='+($(this).attr('data-feedbackID')), 
+                        dataType: "json",  
+                        success: function(data){
+                        	data.forEach(function(e) {
+                        		console.log(e);
+                        		$('.feedbacks').append('<span>'+
+                        			'<span>'+ e.F_Feedback + '</span>' +
+                        			'<i class="firstname">'+ e.F_Fname +'</i>' + '&nbsp' +
+                        			'<i class="lastname">'+ e.F_Lname +'</i>' +
+                        			'</span>'
+                        		);
+                        	});                        	
+                        	clickOrNot = "true";
+                        },
+                            error:function(data){console.log('Exception: '+data);}        
+                    })
+				} else {
+					$(this).attr('value', "Show Feedback");
+					$('.feedbacks').find('span').remove();
+					clickOrNot = "false";
+				}
+
+            });
+			//$('.feedbacks').append()
+		});
+	</script>
+</div>
+</body>
+</html>
